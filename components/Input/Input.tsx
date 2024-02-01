@@ -3,7 +3,7 @@ import React from 'react'
 
 const Input = (props: InputProps) => {
 
-    const { type, placeholder, name, value, onChange, className, size } = props;
+    const { type, placeholder, name, value, onChange, className, size, id } = props;
 
 
     const renderSize = () => {
@@ -21,6 +21,7 @@ const Input = (props: InputProps) => {
 
     return (
         <input
+            id={id}
             type={type}
             placeholder={placeholder}
             name={name}

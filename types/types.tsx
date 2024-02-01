@@ -3,6 +3,7 @@
 // input types
 
 export type InputProps = {
+    id?: string
     type?: string
     placeholder?:string
     name?: string
