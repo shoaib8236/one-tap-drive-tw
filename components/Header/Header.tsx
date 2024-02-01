@@ -21,7 +21,7 @@ const Header = () => {
                         </Link>
                     </li>
                     <li className="">
-                        <Link className={`relative uppercase text-md p-4 hover:text-opacity-50 transition duration-300 text-gray-300`} href="/about-us">
+                        <Link className={`relative uppercase text-md p-4 hover:text-opacity-50 transition duration-300 text-gray-300`} href="/about">
                             About Us
                         </Link>
                     </li>

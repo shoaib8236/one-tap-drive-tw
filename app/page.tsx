@@ -1,4 +1,12 @@
-import { Container, Hero, Category, Testimonials, Section } from "@/components";
+import {
+  Container,
+  Hero,
+  Category,
+  Testimonials,
+  Section,
+  VendorInvitation,
+  CarRentalRequirment,
+} from "@/components";
 import PageHeading from "@/components/PageHeading/PageHeading";
 
 import Image from "next/image";
@@ -129,11 +137,25 @@ export default function Home() {
           </div>
         </Container>
       </Section>
-      <Section className="">
+      <Section>
+        <CarRentalRequirment />
+      </Section>
+      <Section>
+        <div className="flex justify-center px-4 max-sm:px-2">
+          <Image
+            src={"/ad-banner-1.png"}
+            width={1368}
+            height={216}
+            alt="ad-banner-1"
+          />
+        </div>
+      </Section>
+      <Section>
         <Container>
           <Testimonials />
         </Container>
       </Section>
+      <VendorInvitation />
     </div>
   );
 }
