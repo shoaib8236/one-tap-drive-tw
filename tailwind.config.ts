@@ -33,6 +33,8 @@ const config: Config = {
     },
     backgroundImage: {
       "hero": "url('../public/hero.jpg')",
+      'mercedes': "url('../public/mercedes.webp')",
+      'striped-background': "url('../public/striped-background.png')",
     },
 
 
@@ -50,6 +52,24 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+
+
+
+      keyframes: {
+        rubber: {
+          '0%': { transform: 'scaleX(1)' },
+          '12.5%': { transform: 'scaleX(1.12) scaleY(0.75)' },
+          '25%': { transform: 'scaleX(0.85) scaleY(1)' },
+          '37.5%': { transform: 'scaleX(1.09) scaleY(0.85)' },
+          '50%': { transform: 'scaleX(0.9) scaleY(1)' },
+          '62.5%': { transform: 'scaleX(1.05) scaleY(0.95)' },
+          '75%': { transform: 'scaleX(1) scaleY(1)' },
+        }
+      },
+
+      animation: {
+        rubber: 'rubber 1s ease-in-out both',
       },
 
     },

@@ -8,6 +8,8 @@ import PageBanner from './PageBanner/PageBanner'
 import TestimonialCard from './TestimonialCard/TestimonialCard'
 import Testimonials from './Testimonials/Testimonials'
 import Section from './Section/Section'
+import VendorInvitation from './VendorInvitation/VendorInvitation'
+import CarRentalRequirment from './CarRentalRequirment/CarRentalRequirment'
 
 
 export {
@@ -20,4 +22,6 @@ export {
     TestimonialCard,
     Testimonials,
     Section,
+    VendorInvitation,
+    CarRentalRequirment,
 }
