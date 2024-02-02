@@ -2,34 +2,30 @@ import React from "react";
 import { Container, Section } from "@/components";
 import Button from "../Button/Button";
 import Image from "next/image";
+import PageHeading from "../PageHeading/PageHeading";
 
 const BlogCard = () => {
   return (
     <>
       <Section>
         <Container>
-          {[1, 2, 3, 4, 5].map((item) =>
-            <>
-              <div className="grid grid-cols-1 md:grid-cols-2 space-x-6 gap-4 mt-20 items-center ">
-                <div className={`${item % 2 === 0 && "order-last"}`}>
-                  <Image className="rounded-xl" width={500} height={100} src={"/about_image.jpg"} alt="Blog-image" />
-                </div>
-                <div>
-                  <div>
-                    <p className="mt-4">August 1, 2023</p>
-                    <h2 className="mt-6">Blog 1</h2>
-                    <p className="mt-4">
-                      Bentley rental Dubai deals with almost all the updated and new models for rental purposes. Among all, Bentayga is the sublime choice for SUV lovers. A perfect
-                      blend of speed and luxury, it’s the ultimate choice for long drives on highways. It is one of the most modern cars ever made, having a traditional outlook. A
-                      perfect blend of speed and luxury, it’s the ultimate choice for long drives on highways. It is one of the most modern cars ever made, having a traditional
-                      outlook
-                    </p>
-                    <Button className="mt-4" text="Read More" size="md" />
+          <PageHeading className="mt-14" title="Blogs" />
+          <div className="flex flex-wrap -m-4">
+            {[1, 2, 3, 4, 5, 6, 7].map(() => (
+              <>
+                <div className="xl:w-1/3 md:w-1/2 p-4 group">
+                  <div className="bg-gray-100 p-6 rounded-lg">
+                    <Image className="rounded-xl group-hover:scale-105 duration-300" width={500} height={60} src={"/about_image.jpg"} alt="Blog-image" />
+                    <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font mt-6">
+                      <span className="font-extrabold text">Business, Travel</span> — July 2, 2020
+                    </h3>
+                    <h2 className="text-lg text-gray-900 font-medium title-font mb-2 mt-3">Chichen Itza</h2>
+                    <p className="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
                   </div>
                 </div>
-              </div>
-            </>
-          )}
+              </>
+            ))}
+          </div>
         </Container>
       </Section>
     </>
