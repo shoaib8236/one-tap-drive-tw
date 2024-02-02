@@ -13,7 +13,8 @@ import CarRentalRequirment from './CarRentalRequirment/CarRentalRequirment';
 import BookingBanner from './BookingBanner/BookingBanner';
 import Gallery from './Gallery/Gallery';
 import YoutubePlayer from './YoutubePlayer/YoutubePlayer';
-
+import Upload from './Upload/Upload';
+import BlogCard from './BlogCard/BlogCard';
 
 
 export {
@@ -30,5 +31,7 @@ export {
     CarRentalRequirment,
     BookingBanner,
     Gallery,
-    YoutubePlayer
+    YoutubePlayer,
+    Upload,
+    BlogCard
 }

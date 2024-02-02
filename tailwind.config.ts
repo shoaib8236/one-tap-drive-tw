@@ -11,6 +11,9 @@ const config: Config = {
     colors: {
       'primary-dark': '#ff6f00',
       "primary": "#ffba00",
+      "primary-opacity-75": "rgba(255, 186, 0, 0.75)",
+      "primary-opacity-50": "rgba(255, 186, 0, 0.5)",
+      'primary-opacity-25': 'rgba(255, 186, 0, 0.25)',
       "secondary": "#ff6f00",
       "danger": "#ff3d00",
       "success": "#00c853",

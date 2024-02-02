@@ -1,9 +1,16 @@
-import React from 'react'
+import { Container, Section, Upload } from "@/components";
+import React from "react";
 
 const Services = () => {
   return (
-    <div>Services</div>
-  )
-}
+    <div className="__services">
+      <Section>
+        <Container>
+          <Upload />
+        </Container>
+      </Section>
+    </div>
+  );
+};
 
-export default Services
+export default Services;

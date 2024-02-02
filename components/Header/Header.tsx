@@ -26,10 +26,16 @@ const Header = () => {
                         </Link>
                     </li>
                     <li>
+                        <Link className={`relative uppercase text-md p-4 hover:text-opacity-50 transition duration-300 text-gray-300`} href="/blogs">
+                            Blogs
+                        </Link>
+                    </li>
+                    <li>
                         <Link className={`relative uppercase text-md p-4 hover:text-opacity-50 transition duration-300 text-gray-300`} href="/contact">
                             Contact Us
                         </Link>
                     </li>
+                 
                 </ul>
                 <div>
                     <Link href="/login"
