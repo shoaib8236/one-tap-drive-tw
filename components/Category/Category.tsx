@@ -15,7 +15,7 @@ const Category = () => {
           {[1, 2, 3, 4, 5].map((item: number) => (
             <div
               key={item}
-              className="shadow shadow-xl hover:bg-gray-300 rounded-lg shadow-gray-300"
+              className="shadow-xl hover:bg-gray-300 rounded-lg shadow-gray-300"
             >
               <div className="relative overflow-hidden">
                 <Image
@@ -28,7 +28,7 @@ const Category = () => {
               </div>
               <div className="p-4">
                 <h3 className="mt-4">
-                  <em>Sadan</em>
+                  Sadan
                 </h3>
                 <p className="font-semibold">4 Cars</p>
                 <Button

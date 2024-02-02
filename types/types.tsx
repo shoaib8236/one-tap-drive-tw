@@ -42,3 +42,25 @@ export type SectionProps = {
     className?: string
     bottomSpacing?: string
 }
+
+
+// youtube player types
+
+export type YoutubePlayerProps = {
+    videoId?: string
+    id?: string
+    className?: string
+    iframeClassName?: string
+    style?: object
+    title?: string
+    loading?: string | "eager" | "lazy"
+    opts?: object
+    onReady?: () => void
+    onPlay?: () => void
+    onPause?: () => void
+    onEnd?: () => void
+    onError?: () => void
+    onStateChange?: () => void
+    onPlaybackRateChange?: () => void
+    onPlaybackQualityChange?: () => void
+}
