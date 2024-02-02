@@ -8,7 +8,6 @@ import {
   CarRentalRequirment,
 } from "@/components";
 import PageHeading from "@/components/PageHeading/PageHeading";
-
 import Image from "next/image";
 import { MdOutlineCheck } from "react-icons/md";
 

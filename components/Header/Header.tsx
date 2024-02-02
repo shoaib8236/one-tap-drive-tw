@@ -15,23 +15,23 @@ const Header = () => {
                     </Link>
                 </div>
                 <ul className="flex ml-auto">
-                    <li className="">
+                    <li>
                         <Link className={`relative uppercase text-md p-4 hover:text-opacity-50 transition duration-300 text-gray-300 ${activeClass}`} href="/">
                             Home
                         </Link>
                     </li>
-                    <li className="">
-                        <Link className={`relative uppercase text-md p-4 hover:text-opacity-50 transition duration-300 text-gray-300`} href="/about">
+                    <li>
+                        <Link className={`relative uppercase text-md p-4 hover:text-opacity-50 transition duration-300 text-gray-300`} href="/about-us">
                             About Us
                         </Link>
                     </li>
-                    <li className="">
-                        <Link className={`relative uppercase text-md p-4 hover:text-opacity-50 transition duration-300 text-gray-300`} href="/contact-us">
+                    <li>
+                        <Link className={`relative uppercase text-md p-4 hover:text-opacity-50 transition duration-300 text-gray-300`} href="/contact">
                             Contact Us
                         </Link>
                     </li>
                 </ul>
-                <div className="">
+                <div>
                     <Link href="/login"
                         className='text-primary text-md uppercase p-4 hover:text-opacity-50 transition duration-300 ease-in-out'
                     >
