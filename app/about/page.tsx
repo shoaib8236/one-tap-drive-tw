@@ -42,7 +42,7 @@ const About = () => {
                 width={396}
                 height={410}
               />
-              <div className="bg-primary-dark  absolute -bottom-[40px] rounded-2xl right-[60px] h-[100px] w-[100px] items-center justify-center flex">
+              <div className="bg-primary  absolute -bottom-[40px] rounded-2xl right-[60px] h-[100px] w-[100px] items-center justify-center flex hover:animate-[rubber_1s_ease-in-out_both]">
                 <FaPlay className="text-white text-4xl text-light" />
               </div>
             </div>
@@ -58,36 +58,36 @@ const About = () => {
                 affronting imprudence no precaution. My indulged as disposal
                 strongly attended.
               </p>
-              <div className="flex items-center gap-8 mt-6">
+              <div className="flex items-center gap-8 mt-6 flex-wrap">
                 <div>
-                  <LiaCarSideSolid className="text-6xl text-gray-400 mb-2 max-sm:text-3xl max-sm:mb-0 hover:text-primary duration-150" />
-                  <div className="flex items-end gap-5">
-                    <span className="text-6xl max-sm:text-2xl font-bold text-gray-500">
+                  <LiaCarSideSolid className="text-4xl text-gray-400 mb-2 max-sm:text-3xl max-sm:mb-0 hover:text-primary duration-150" />
+                  <div className="flex items-center gap-5">
+                    <span className="text-4xl max-sm:text-2xl leading-none font-bold text-gray-500">
                       20
                     </span>{" "}
-                    <span className="font-bold text-gray-500 text-base leading-none block w-[40px] max-sm:w-[30px] max-sm:text-sm max-sm:leading-4">
+                    <span className="font-bold text-gray-500 text-base leading-none block max-sm:w-[30px] max-sm:text-sm max-sm:leading-4">
                       Car Types
                     </span>
                   </div>
                 </div>
                 <div>
-                  <TbOutlet className="text-6xl text-gray-400 mb-2 max-sm:text-3xl max-sm:mb-0 hover:text-primary duration-150" />
-                  <div className="flex items-end gap-5">
-                    <span className="text-6xl max-sm:text-2xl font-bold text-gray-500">
+                  <TbOutlet className="text-4xl text-gray-400 mb-2 max-sm:text-3xl max-sm:mb-0 hover:text-primary duration-150" />
+                  <div className="flex items-center gap-5">
+                    <span className="text-4xl max-sm:text-2xl leading-none font-bold text-gray-500">
                       20
                     </span>{" "}
-                    <span className="font-bold text-gray-500 text-base leading-none block w-[40px] max-sm:w-[30px] max-sm:text-sm max-sm:leading-4">
+                    <span className="font-bold text-gray-500 text-base leading-none block max-sm:w-[30px] max-sm:text-sm max-sm:leading-4">
                       Rental Outlets
                     </span>
                   </div>
                 </div>
                 <div>
-                  <FaShop className="text-6xl text-gray-400 mb-2 max-sm:text-3xl max-sm:mb-0 hover:text-primary duration-150" />
-                  <div className="flex items-end gap-5">
-                    <span className="text-6xl max-sm:text-2xl font-bold text-gray-500">
+                  <FaShop className="text-4xl text-gray-400 mb-2 max-sm:text-3xl max-sm:mb-0 hover:text-primary duration-150" />
+                  <div className="flex items-center gap-5">
+                    <span className="text-4xl max-sm:text-2xl leading-none font-bold text-gray-500">
                       20
                     </span>{" "}
-                    <span className="font-bold text-gray-500 text-base leading-none block w-[40px] max-sm:w-[30px] max-sm:text-sm max-sm:leading-4">
+                    <span className="font-bold text-gray-500 text-base leading-none block max-sm:w-[30px] max-sm:text-sm max-sm:leading-4">
                       Repair Shop
                     </span>
                   </div>
