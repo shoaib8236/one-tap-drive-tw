@@ -1,4 +1,4 @@
-import { Container, Section } from "@/components";
+import { BookingBanner, Container, Gallery, Section, YoutubePlayer } from "@/components";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -7,6 +7,8 @@ import { LiaCarSideSolid } from "react-icons/lia";
 import { TbOutlet } from "react-icons/tb";
 import { FaShop } from "react-icons/fa6";
 import PageHeading from "@/components/PageHeading/PageHeading";
+import { FaCheck } from "react-icons/fa6";
+
 
 const About = () => {
   return (
@@ -42,13 +44,13 @@ const About = () => {
                 width={396}
                 height={410}
               />
-              <div className="bg-primary-dark  absolute -bottom-[40px] rounded-2xl right-[60px] h-[100px] w-[100px] items-center justify-center flex">
+              <div className="bg-primary  absolute -bottom-[40px] rounded-2xl right-[60px] h-[100px] w-[100px] items-center justify-center flex hover:animate-[rubber_1s_ease-in-out_both]">
                 <FaPlay className="text-white text-4xl text-light" />
               </div>
             </div>
             <div>
-              <h2 className="mb-4">About Company</h2>
-              <h3 className="text-5xl max-sm:text-2xl mb-4">
+              <h2 className="mb-4 font-light">About Company</h2>
+              <h3 className="text-4xl font-medium max-sm:text-2xl mb-4">
                 You start the engine and your adventure begins
               </h3>
               <p>
@@ -58,36 +60,36 @@ const About = () => {
                 affronting imprudence no precaution. My indulged as disposal
                 strongly attended.
               </p>
-              <div className="flex items-center gap-8 mt-6">
+              <div className="flex items-center gap-8 mt-6 flex-wrap">
                 <div>
-                  <LiaCarSideSolid className="text-6xl text-gray-400 mb-2 max-sm:text-3xl max-sm:mb-0 hover:text-primary duration-150" />
-                  <div className="flex items-end gap-5">
-                    <span className="text-6xl max-sm:text-2xl font-bold text-gray-500">
+                  <LiaCarSideSolid className="text-4xl text-gray-400 mb-2 max-sm:text-3xl max-sm:mb-0 hover:text-primary duration-150" />
+                  <div className="flex items-center gap-5">
+                    <span className="text-4xl max-sm:text-2xl leading-none font-bold text-gray-500">
                       20
                     </span>{" "}
-                    <span className="font-bold text-gray-500 text-base leading-none block w-[40px] max-sm:w-[30px] max-sm:text-sm max-sm:leading-4">
+                    <span className="font-bold text-gray-500 text-base leading-none block max-sm:w-[30px] max-sm:text-sm max-sm:leading-4">
                       Car Types
                     </span>
                   </div>
                 </div>
                 <div>
-                  <TbOutlet className="text-6xl text-gray-400 mb-2 max-sm:text-3xl max-sm:mb-0 hover:text-primary duration-150" />
-                  <div className="flex items-end gap-5">
-                    <span className="text-6xl max-sm:text-2xl font-bold text-gray-500">
+                  <TbOutlet className="text-4xl text-gray-400 mb-2 max-sm:text-3xl max-sm:mb-0 hover:text-primary duration-150" />
+                  <div className="flex items-center gap-5">
+                    <span className="text-4xl max-sm:text-2xl leading-none font-bold text-gray-500">
                       20
                     </span>{" "}
-                    <span className="font-bold text-gray-500 text-base leading-none block w-[40px] max-sm:w-[30px] max-sm:text-sm max-sm:leading-4">
+                    <span className="font-bold text-gray-500 text-base leading-none block max-sm:w-[30px] max-sm:text-sm max-sm:leading-4">
                       Rental Outlets
                     </span>
                   </div>
                 </div>
                 <div>
-                  <FaShop className="text-6xl text-gray-400 mb-2 max-sm:text-3xl max-sm:mb-0 hover:text-primary duration-150" />
-                  <div className="flex items-end gap-5">
-                    <span className="text-6xl max-sm:text-2xl font-bold text-gray-500">
+                  <FaShop className="text-4xl text-gray-400 mb-2 max-sm:text-3xl max-sm:mb-0 hover:text-primary duration-150" />
+                  <div className="flex items-center gap-5">
+                    <span className="text-4xl max-sm:text-2xl leading-none font-bold text-gray-500">
                       20
                     </span>{" "}
-                    <span className="font-bold text-gray-500 text-base leading-none block w-[40px] max-sm:w-[30px] max-sm:text-sm max-sm:leading-4">
+                    <span className="font-bold text-gray-500 text-base leading-none block max-sm:w-[30px] max-sm:text-sm max-sm:leading-4">
                       Repair Shop
                     </span>
                   </div>
@@ -124,6 +126,42 @@ const About = () => {
             chauffeurs, and travel freely at your own pace.
           </p>
         </Container>
+      </Section>
+      <Section>
+        <Container>
+          <div className="grid items-center grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <YoutubePlayer className="w-full h-[300px] rounded overflow-hidden" videoId="1a8rHK3CnOM" />
+            </div>
+            <div>
+              <div className="flex group items-start max-sm:">
+                <Image className="group-hover:animate-[rubber_1s_ease-in-out_both]" src="/4.png" width={120} height={120} alt="1" />
+                <div>
+                  <h1 className="mb-2">Mission</h1>
+                  <p>
+                    Our core purpose is to be your gateway to the local car
+                    rental industry across the world and make the process of
+                    renting cars easy and transparent.
+                  </p>
+                </div>
+              </div>
+              <div className="flex group items-start max-sm:">
+                <Image className="group-hover:animate-[rubber_1s_ease-in-out_both]" src="/3.png" width={120} height={120} alt="1" />
+                <div>
+                  <h1 className="mb-2">Vision</h1>
+                  <p>
+                    Our vision is to be the world’s leading car rental portal
+                    and add value to our users’ experiences through constant
+                    innovation and improvements.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </Section>
+      <Section>
+        <BookingBanner />
       </Section>
       <Section>
         <Container>
@@ -177,6 +215,107 @@ const About = () => {
           </div>
         </Container>
       </Section>
+      <Section>
+        <Container>
+          <Image
+            className="object-contain m-auto"
+            width={828}
+            height={490}
+            src="/display_car_image.png"
+            alt="about"
+          />
+          <div className="grid grid-cols-1 md:grid-cols-2">
+            <div className="flex p-4 max-md:p-0 md:justify-center">
+              <div>
+                <h2 className="mb-6">How to rent a car</h2>
+                <ul>
+                  <li className="mb-2">
+                    <p>Browse offers on WheelsOnClick.com</p>
+                    <p className="ml-0 mb-2 flex items-center gap-4">
+                      <FaCheck className="text-primary min-w-[16px]" /> Register
+                      and use our mobile app for a better experience
+                    </p>
+                  </li>
+                  <li className="mb-2">
+                    <p>Select your preferred car among hundreds of options</p>
+                    <p className="ml-0 mb-2 flex items-center gap-4">
+                      <FaCheck className="text-primary min-w-[16px]" /> Narrow
+                      down your search by using the filters, as per your
+                      requirement
+                    </p>
+                  </li>
+                  <li className="mb-2">
+                    <p>
+                      Connect with listed suppliers offering the car(s) you wish
+                      to hire and mention your required dates
+                    </p>
+                    <p className="ml-0 mb-2 flex items-center gap-4">
+                      <FaCheck className="text-primary min-w-[16px]" /> You can
+                      contact them directly via Phone or WhatsApp
+                    </p>
+                    <div>
+                      <p>
+                        Rental fee and deposit payment can be made by Card or
+                        Cash at the time of delivery
+                      </p>
+                      <p>
+                        Share your feedback with us if the company is
+                        unresponsive or the car is unavailable
+                      </p>
+                    </div>
+                  </li>
+                  <li className="mb-2">
+                    <p>Book with the company of your choice</p>
+                  </li>
+                  <li className="mb-2">
+                    <p>Drive away!</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="h-full max-md:p-0 p-4 max-md:before:hidden flex md:justify-center relative before:left-0 before:top-0 before:w-[2px] before:bg-primary before:absolute before:content-[''] before:h-full">
+              <div>
+                <h2 className="mb-6">Important Tips</h2>
+                <ul>
+                  <li className="mb-2">
+                    <p>Check the car thoroughly before taking it</p>
+                    <p className="ml-0 mb-2 flex items-center gap-4">
+                      <FaCheck className="text-primary min-w-[16px]" /> Take
+                      pictures of the car’s condition and share it with the
+                      supplier
+                    </p>
+                  </li>
+                  <li className="mb-2">
+                    <p>Check the car thoroughly before taking it</p>
+                    <p className="ml-0 mb-2 flex items-center gap-4">
+                      <FaCheck className="text-primary min-w-[16px]" /> Take
+                      pictures of the car’s condition and share it with the
+                      supplier
+                    </p>
+                  </li>
+                  <li className="mb-2">
+                    <p>Check the car thoroughly before taking it</p>
+                    <p className="ml-0 mb-2 flex items-center gap-4">
+                      <FaCheck className="text-primary min-w-[16px]" /> Take
+                      pictures of the car’s condition and share it with the
+                      supplier
+                    </p>
+                  </li>
+                  <li className="mb-2">
+                    <p>Check the car thoroughly before taking it</p>
+                    <p className="ml-0 mb-2 flex items-center gap-4">
+                      <FaCheck className="text-primary min-w-[16px]" /> Take
+                      pictures of the car’s condition and share it with the
+                      supplier
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </Container>
+      </Section>
+      <Gallery />
     </div>
   );
 };

@@ -35,7 +35,9 @@ const config: Config = {
       "hero": "url('../public/hero.jpg')",
       'mercedes': "url('../public/mercedes.webp')",
       'striped-background': "url('../public/striped-background.png')",
+      'cta_car_action': "url('../public/cta_car_action.png')", 
     },
+
 
 
     screens: {

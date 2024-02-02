@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Nunito } from "next/font/google";
+import { Outfit } from "next/font/google";
 import "../styles/index.scss";
 import "./globals.css";
 import { Footer, Header } from "@/components";
 
-const inter = Nunito({ subsets: ["latin"] });
+const inter = Outfit({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
