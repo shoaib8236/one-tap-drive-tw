@@ -24,6 +24,7 @@ export type ButtonProps = {
   loading?: boolean;
   themeColor?: string;
   icon?: React.ReactNode;
+  iconAnimation?: boolean;
 };
 
 // page heading types
@@ -69,4 +70,14 @@ export type UploadProps = {
   size?: "sm" | "md" | "lg";
   className?: string;
   onChange?: (e: File | null) => void;
+};
+
+
+// modal types
+
+export type ModalProps = {
+  children?: React.ReactNode;
+  className?: string;
+  visible: boolean;
+  onClose?: () => void;
 };

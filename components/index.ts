@@ -16,6 +16,7 @@ import YoutubePlayer from './YoutubePlayer/YoutubePlayer';
 import Upload from './Upload/Upload';
 import BlogCard from './BlogCard/BlogCard';
 import VehicleSlider from './VehicleSlider/VehicleSlider';
+import Faq from './Faq/Faq';
 
 
 export {
@@ -35,5 +36,6 @@ export {
     YoutubePlayer,
     Upload,
     BlogCard,
-    VehicleSlider
+    VehicleSlider,
+    Faq
 }

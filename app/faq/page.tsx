@@ -1,5 +1,5 @@
 
-import { Container } from '@/components'
+import { Container, Faq } from '@/components'
 import PageHeading from '@/components/PageHeading/PageHeading'
 import React from 'react'
 
@@ -24,6 +24,8 @@ const FaqPage = () => {
                     <p>
                         <span className="text-primary">OneTapDrive</span> claims no responsibility regarding the authenticity and applicability of the above questions & answers and any loss that you may incur by referring to the above information.
                     </p>
+
+                    <Faq />
 
                 </div>
             </Container>
