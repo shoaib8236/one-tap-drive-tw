@@ -15,6 +15,7 @@ import Gallery from './Gallery/Gallery';
 import YoutubePlayer from './YoutubePlayer/YoutubePlayer';
 import Upload from './Upload/Upload';
 import BlogCard from './BlogCard/BlogCard';
+import VehicleSlider from './VehicleSlider/VehicleSlider';
 
 
 export {
@@ -33,5 +34,6 @@ export {
     Gallery,
     YoutubePlayer,
     Upload,
-    BlogCard
+    BlogCard,
+    VehicleSlider
 }
