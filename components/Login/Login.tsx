@@ -16,11 +16,11 @@ const Login = () => {
         <div>
           <div className="">
             <div className="w-4/12 mx-auto">
-              <div className="flex mx-auto items-center w-fit px-14 py-2 border-gray-200 border">
+              <div className="flex mx-auto items-center w-fit px-14 py-2 border-gray-200 border hover:cursor-pointer">
                 <FaFacebook className="text-3xl text-fb-blue" />
-                <span className="ps-4">Sign in with facebook</span>
+                <span className="ps-4">Sign in with Facebook</span>
               </div>
-              <div className="flex mx-auto items-center w-fit px-14 py-2 mt-3 border-gray-200 border">
+              <div className="flex mx-auto items-center w-fit px-14 py-2 mt-3 border-gray-200 border hover:cursor-pointer">
                 <FcGoogle className="text-3xl text-fb-blue" />
                 <span className="ps-8">Sign in with Google</span>
               </div>
@@ -28,7 +28,7 @@ const Login = () => {
               <Input className="flex mx-auto items-center w-fit px-10" type="email" placeholder="Email" name="email" id="email" />
               <Button className="text-light w-full mt-3" text="Sent OTP" />
               <Button themeColor="outlined-primary" className="w-full mt-3" text="Sign in With Mobile No." />
-              <p className="text-center mt-3">
+              <p className="text-center mt-4">
                 By continuing, you agree to our <br />
                 <span className="text-primary">Terms Of Service</span> and <span className="text-primary">Privacy Policy</span>.
               </p>
