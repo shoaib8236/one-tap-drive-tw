@@ -30,6 +30,12 @@ const Button = (props: ButtonProps) => {
         return "bg-dark text-light";
       case "light":
         return "bg-light text-gray-900";
+      // outlined
+
+      case 'outlined-primary':
+
+      return 'bg-light border border-primary'
+
       default:
         return "bg-primary text-light";
     }

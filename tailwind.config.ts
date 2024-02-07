@@ -18,6 +18,7 @@ const config: Config = {
       "warning": "#ff9100",
       "dark": "#212121",
       "light": "#FFFFFF",
+      "fb-blue": "#0866FF",
       'gray': {
         50: '#f9fafb',
         100: '#f3f4f6',
