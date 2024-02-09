@@ -8,18 +8,21 @@ import { IoCloseSharp } from "react-icons/io5";
 const Modal = (props: ModalProps) => {
   const { visible = false, children, className, onClose } = props;
   const modalBodyRef = React.useRef<HTMLDivElement>(null);
+  const rootRef = React.useRef<HTMLDivElement>(null);
 
   const [visibleModal, setVisibleModal] = React.useState(false);
 
   const onVisibleModal = () => {
-    if (modalBodyRef.current) {
+    if (modalBodyRef.current && rootRef.current) {
+      rootRef.current.classList.replace("opacity-0", "opacity-100");
       modalBodyRef.current.classList.replace("opacity-0", "opacity-100");
       modalBodyRef.current.classList.replace("translate-y-2", "translate-y-0");
     }
   };
 
   const onInvisibleModal = () => {
-    if (modalBodyRef.current) {
+    if (modalBodyRef.current && rootRef.current) {
+      rootRef.current.classList.replace("opacity-100", "opacity-0");
       modalBodyRef.current.classList.replace("opacity-100", "opacity-0");
       modalBodyRef.current.classList.replace("translate-y-0", "translate-y-2");
     }
@@ -44,7 +47,6 @@ const Modal = (props: ModalProps) => {
         onVisibleModal();
       }, 100);
     }
-
     return () => {
       clearTimeout(timer);
     };
@@ -53,7 +55,10 @@ const Modal = (props: ModalProps) => {
   return (
     <>
       {visibleModal && (
-        <div className="__modal-root-context fixed inset-0 bg-dark/50">
+        <div
+          ref={rootRef}
+          className="__modal-root-context fixed inset-0 bg-dark/50 opacity-0 duration-300 z-50"
+        >
           <div className="__modal-root flex items-center justify-center h-full w-full">
             <div
               ref={modalBodyRef}

@@ -17,6 +17,8 @@ import Upload from './Upload/Upload';
 import BlogCard from './BlogCard/BlogCard';
 import VehicleSlider from './VehicleSlider/VehicleSlider';
 import Faq from './Faq/Faq';
+import Accordion from './Accordion/Accordion';
+import ServicesCard from './ServicesCard/ServicesCard';
 
 
 export {
@@ -37,5 +39,7 @@ export {
     Upload,
     BlogCard,
     VehicleSlider,
-    Faq
+    Faq,
+    Accordion,
+    ServicesCard
 }

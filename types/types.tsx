@@ -81,3 +81,14 @@ export type ModalProps = {
   visible: boolean;
   onClose?: () => void;
 };
+
+// accordion types
+
+export type AccordionProps = {
+  children?: React.ReactNode;
+  className?: string;
+  title?: string;
+  id?: string;
+  isOpen?: boolean;
+  onToggle?: () => void;
+};
