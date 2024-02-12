@@ -1,8 +1,40 @@
-import { Container, Section, ServicesCard } from "@/components";
-import Link from "next/link";
-import React from "react";
+import {
+  Container,
+  Section,
+  ServicesCard,
+  Button,
+  Select,
+  ServicesFiltersHeader,
+} from "@/components";
 
-const Services = () => {
+import Link from "next/link";
+import type { Metadata, ResolvingMetadata } from "next";
+import { Vehicle } from "@/types/interface";
+
+type Props = {
+  params: { id: string };
+  searchParams: { [key: string]: string | string[] | undefined };
+};
+
+export async function generateMetadata(
+  { params, searchParams }: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  return {
+    title: "Services | Rent a Car in Dubai on Day, Week, Month-Basis",
+  };
+}
+
+const getCars = async () => {
+  const res = await fetch("https://freetestapi.com/api/v1/cars");
+  const data = await res.json();
+  return data;
+};
+
+export default async function Services({ params, searchParams }: Props) {
+
+  let cars = await getCars();
+
   return (
     <div className="__services">
       <Container>
@@ -24,21 +56,27 @@ const Services = () => {
             </div>
           </div>
         </Section>
-        <div className="flex py-4">
-          <div className="flex-1 max-w-[400px] w-[400px] border-r">1</div>
-          <div className="flex-1 px-4">
-            <h1 className="text-2xl mb-4">RENT A CAR IN DUBAI ON DAY, WEEK, MONTH-BASIS</h1>
-            <p>Hire cars directly from local car rental companies at the best rate</p>
-            {
-              [1,2,3,4,5,6,7,8,9].map(item=> (
-                <><ServicesCard/></>
-              ))
-            }
+        <div className="flex flex-col gap-14 py-4">
+          <ServicesFiltersHeader data={searchParams} />
+          <div className="flex-1">
+            <h1 className="text-2xl mb-4">
+              RENT A CAR IN DUBAI ON DAY, WEEK, MONTH-BASIS
+            </h1>
+            <p>
+              Hire cars directly from local car rental companies at the best
+              rate
+            </p>
+            <div className="grid flex-col mt-12 gap-6">
+              {cars.map((item: Vehicle) => (
+                <ServicesCard data={item} key={item.id} />
+              ))}
+            </div>
+            <div className="flex justify-center py-4">
+              <Button text="Load More" themeColor="dark" size="md" />
+            </div>
           </div>
         </div>
       </Container>
     </div>
   );
-};
-
-export default Services;
+}

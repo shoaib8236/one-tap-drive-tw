@@ -19,6 +19,10 @@ import VehicleSlider from './VehicleSlider/VehicleSlider';
 import Faq from './Faq/Faq';
 import Accordion from './Accordion/Accordion';
 import ServicesCard from './ServicesCard/ServicesCard';
+import Button from './Button/Button';
+import Select from './Select/Select';
+import ServicesFiltersModal from './ServicesFiltersModal/ServicesFiltersModal';
+import ServicesFiltersHeader from './ServicesFiltersHeader/ServicesFiltersHeader';
 
 
 export {
@@ -41,5 +45,9 @@ export {
     VehicleSlider,
     Faq,
     Accordion,
-    ServicesCard
+    ServicesCard,
+    Button,
+    Select,
+    ServicesFiltersModal,
+    ServicesFiltersHeader
 }

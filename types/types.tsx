@@ -1,5 +1,7 @@
 // types.tsx
 
+import { Vehicle } from "./interface";
+
 // input types
 
 export type InputProps = {
@@ -11,6 +13,18 @@ export type InputProps = {
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   className?: string;
   size?: "sm" | "md" | "lg";
+};
+
+// select types
+
+export type SelectProps = {
+  id?: string;
+  name?: string;
+  value?: string;
+  onChange?: (e: React.ChangeEvent<HTMLSelectElement>) => void;
+  className?: string;
+  size?: "sm" | "md" | "lg";
+  children?: React.ReactNode;
 };
 
 // button types
@@ -72,10 +86,11 @@ export type UploadProps = {
   onChange?: (e: File | null) => void;
 };
 
-
 // modal types
 
 export type ModalProps = {
+  width?: number;
+  title?: string;
   children?: React.ReactNode;
   className?: string;
   visible: boolean;
@@ -91,4 +106,30 @@ export type AccordionProps = {
   id?: string;
   isOpen?: boolean;
   onToggle?: () => void;
+};
+
+// Services Filters Modal types
+
+export type ServicesFiltersModalProps = {
+  visible: boolean;
+  onClose?: () => void;
+  onFinish?: () => void;
+};
+
+// Services Filters Header types
+
+export type ServicesFiltersHeaderProps = {
+  data?: {
+    filter?: string;
+    brand?: string;
+    model?: string;
+    year?: string;
+  };
+};
+
+// Vehicle types
+
+export type SericesCardProps = {
+  data: Vehicle;
+  key: number | undefined;
 };

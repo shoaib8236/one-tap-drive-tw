@@ -6,7 +6,14 @@ import Button from "../Button/Button";
 import { IoCloseSharp } from "react-icons/io5";
 
 const Modal = (props: ModalProps) => {
-  const { visible = false, children, className, onClose } = props;
+  const {
+    visible = false,
+    children,
+    className,
+    onClose,
+    title,
+    width = 300,
+  } = props;
   const modalBodyRef = React.useRef<HTMLDivElement>(null);
   const rootRef = React.useRef<HTMLDivElement>(null);
 
@@ -57,15 +64,16 @@ const Modal = (props: ModalProps) => {
       {visibleModal && (
         <div
           ref={rootRef}
-          className="__modal-root-context fixed inset-0 bg-dark/50 opacity-0 duration-300 z-50"
+          className="__modal-root-context fixed inset-0 bg-dark/50 opacity-0 duration-300 z-50 backdrop-filter backdrop-blur-sm"
         >
-          <div className="__modal-root flex items-center justify-center h-full w-full">
+          <div className="__modal-root flex items-center justify-center h-full w-full p-4">
             <div
+              style={{ maxWidth: `${width}px` }}
               ref={modalBodyRef}
-              className="__modal-body min-w-[280px] relative opacity-0 translate-y-2 duration-300 bg-light rounded shadow-xl"
+              className="__modal-body w-full relative opacity-0 translate-y-2 duration-300 bg-light rounded shadow-xl"
             >
               <div className="flex p-4 gap-4 w-full items-center justify-between">
-                <h1 className="text-2xl font-medium">Modal title</h1>
+                <h1 className="text-2xl font-medium">{title}</h1>
                 <Button
                   onClick={onClose}
                   className="block ml-auto w-8 h-8"
