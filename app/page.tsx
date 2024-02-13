@@ -5,21 +5,50 @@ import {
   Testimonials,
   Section,
   VendorInvitation,
-  CarRentalRequirment,
+  VehicleSlider,
+  BookingBanner,
 } from "@/components";
 import PageHeading from "@/components/PageHeading/PageHeading";
+
 import Image from "next/image";
 import { MdOutlineCheck } from "react-icons/md";
 
 export default function Home() {
   return (
-    <div>
+    <main>
+
+        {/* Hero Section */}
+
       <Section>
         <Hero />
       </Section>
+
+      {/* Category Section */}
+
       <Section>
         <Category />
       </Section>
+
+      {/* Vegicle slider */}
+
+      <Section>
+        <Container>
+          <PageHeading
+            title="Best Car Rental Deals in Dubai"
+            subTitle="Find the best car rental deals and discounts for all types of cars: be it for personal or business use. Access competitive, commission-free car rental service in Dubai, Abu Dhabi, Sharjah and Ajman."
+          />
+          <VehicleSlider />
+        </Container>
+      </Section>
+
+      {/* Booking Banner */}
+
+      <Section>
+        <BookingBanner />
+      </Section>
+
+      {/* Ad Banner */}
+
       <Section>
         <div className="flex justify-center px-4 max-sm:px-2">
           <Image
@@ -30,6 +59,9 @@ export default function Home() {
           />
         </div>
       </Section>
+
+      {/* Testimonials */}
+
       <Section>
         <div className="overflow-hidden">
           <Container>
@@ -97,6 +129,7 @@ export default function Home() {
           </Container>
         </div>
       </Section>
+
       <Section>
         <Container>
           <div className="max-w-[600px] m-auto">
@@ -136,9 +169,27 @@ export default function Home() {
           </div>
         </Container>
       </Section>
+
+      {/* Vehicle Slider */}
+
       <Section>
-        <CarRentalRequirment />
+        <Container>
+          <PageHeading
+            title="Best Car Rental With Driver in Dubai"
+            subTitle="Find the best car rental deals and discounts for all types of cars: be it for personal or business use. Access competitive, commission-free car rental service in Dubai, Abu Dhabi, Sharjah and Ajman."
+          />
+          <VehicleSlider />
+        </Container>
       </Section>
+
+      {/* Booking Banner */}
+
+      <Section>
+        <BookingBanner />
+      </Section>
+
+      {/* Ad Banner */}
+
       <Section>
         <div className="flex justify-center px-4 max-sm:px-2">
           <Image
@@ -149,12 +200,18 @@ export default function Home() {
           />
         </div>
       </Section>
+
+      {/* Testimonials */}
+
       <Section>
         <Container>
           <Testimonials />
         </Container>
       </Section>
+
+      {/* Vendor Invitation */}
+
       <VendorInvitation />
-    </div>
+    </main>
   );
 }

@@ -13,7 +13,16 @@ import CarRentalRequirment from './CarRentalRequirment/CarRentalRequirment';
 import BookingBanner from './BookingBanner/BookingBanner';
 import Gallery from './Gallery/Gallery';
 import YoutubePlayer from './YoutubePlayer/YoutubePlayer';
-
+import Upload from './Upload/Upload';
+import BlogCard from './BlogCard/BlogCard';
+import VehicleSlider from './VehicleSlider/VehicleSlider';
+import Faq from './Faq/Faq';
+import Accordion from './Accordion/Accordion';
+import ServicesCard from './ServicesCard/ServicesCard';
+import Button from './Button/Button';
+import Select from './Select/Select';
+import ServicesFiltersModal from './ServicesFiltersModal/ServicesFiltersModal';
+import ServicesFiltersHeader from './ServicesFiltersHeader/ServicesFiltersHeader';
 
 
 export {
@@ -30,5 +39,15 @@ export {
     CarRentalRequirment,
     BookingBanner,
     Gallery,
-    YoutubePlayer
+    YoutubePlayer,
+    Upload,
+    BlogCard,
+    VehicleSlider,
+    Faq,
+    Accordion,
+    ServicesCard,
+    Button,
+    Select,
+    ServicesFiltersModal,
+    ServicesFiltersHeader
 }

@@ -10,6 +10,7 @@ const Button = (props: ButtonProps) => {
     themeColor = "primary",
     size,
     icon,
+    iconAnimation = true,
   } = props;
 
   const renderThemeColor = () => {
@@ -54,13 +55,17 @@ const Button = (props: ButtonProps) => {
     }
   };
 
+  const renderIconAnimation = () => {
+    return iconAnimation ? "group-hover:translate-x-1 duration-200" : "";
+  }
+
   return (
     <button
       type={type}
       onClick={onClick}
       className={`${renderThemeColor()} ${renderSize()} group flex items-center justify-center gap-3 font-semibold rounded hover:bg-opacity-80 transition duration-300 ease-in-out active:bg-opacity-50 ${className}`}
     >
-      {text} {icon && <span className="group-hover:translate-x-1 duration-200">{icon}</span>}
+      {text} {icon && <span className={renderIconAnimation()}>{icon}</span>}
     </button>
   );
 };
