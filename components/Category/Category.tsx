@@ -4,6 +4,7 @@ import React from "react";
 import Button from "../Button/Button";
 import PageHeading from "../PageHeading/PageHeading";
 import { BsArrowRight } from "react-icons/bs";
+import Link from "next/link";
 
 
 const Category = () => {
@@ -13,7 +14,8 @@ const Category = () => {
         <PageHeading title="Choose By Categories" />
         <div className="gap-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5">
           {[1, 2, 3, 4, 5].map((item: number) => (
-            <div
+            <Link
+              href={'/services'}
               key={item}
               className="shadow-xl hover:bg-gray-300 rounded-lg shadow-gray-300"
             >
@@ -39,7 +41,7 @@ const Category = () => {
                     icon={<BsArrowRight />}
                 />
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

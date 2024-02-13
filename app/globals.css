@@ -20,7 +20,8 @@
         @apply text-gray-700 max-md:text-base max-sm:text-sm mb-2
     }
 
-    iframe {
-        @apply w-full h-full
-    }
+  
+    
+
+
 }

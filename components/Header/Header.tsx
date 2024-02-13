@@ -8,9 +8,9 @@ const activeClass =
 
 const Header = () => {
   return (
-    <header className="w-full h-24 px-4 bg-dark sticky left-0 top-0 nav flex align-items-cetner z-10">
+    <header className="w-full h-24 px-4 bg-dark sticky left-0 top-0 nav flex align-items-cetner z-50">
       <nav className="flex items-center w-full">
-        <div className="logo flex items-center">
+        <div className="logo flex items-center max-sm:w-[130px]">
           <Link href="/">
             <Image
               priority

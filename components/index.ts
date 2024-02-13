@@ -23,6 +23,8 @@ import Button from './Button/Button';
 import Select from './Select/Select';
 import ServicesFiltersModal from './ServicesFiltersModal/ServicesFiltersModal';
 import ServicesFiltersHeader from './ServicesFiltersHeader/ServicesFiltersHeader';
+import Input from './Input/Input';
+import NextImageGallery from './NextImageGallery/NextImageGallery';
 
 
 export {
@@ -49,5 +51,7 @@ export {
     Button,
     Select,
     ServicesFiltersModal,
-    ServicesFiltersHeader
+    ServicesFiltersHeader,
+    Input,
+    NextImageGallery
 }
