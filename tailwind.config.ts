@@ -22,6 +22,7 @@ const config: Config = {
       "dark": "#212121",
       "light": "#FFFFFF",
       "fb-blue": "#0866FF",
+      "light_grey": "#ffffff1a",
       'gray': {
         50: '#f9fafb',
         100: '#f3f4f6',
@@ -39,7 +40,8 @@ const config: Config = {
       "hero": "url('../public/hero.jpg')",
       'mercedes': "url('../public/mercedes.webp')",
       'striped-background': "url('../public/striped-background.png')",
-      'cta_car_action': "url('../public/cta_car_action.png')", 
+      'cta_car_action': "url('../public/cta_car_action.png')",
+      'list_car_bg': "url('../public/mercedes.webp')",
     },
 
 
